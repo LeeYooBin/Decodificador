@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de texto</title>
+</head>
+<body>
+    <a href="./index.html"><img id="title" src="https://lh3.googleusercontent.com/5w4uc4kuHEO-8a05pbB9GO2M7CeewOONrr7k-DAzKTAWUGZkHB5bt16HYJCGFrvOzdlNZw=s48" alt=""></a>
+    <section id="main">
+        <div id="left-wrapper">
+            <textarea name="text" id="text-input" placeholder="Digite o seu texto" style="resize: none;"></textarea>
+            <div id="warn-wrapper">
+                <div id="warn-symbol"><p>!</p></div> <p id="warn-text">Apenas letras minúsculas e sem acentos.</p>
+            </div>
+            <div id="buttons">
+                <button id="encrypt" class="button">Criptografar</button>
+                <button id="decrypt" class="button">Descriptografar</button>
+            </div>
+        </div>
+        <div id="right-wrapper">
+            <div id="text-result">Nenhuma mensagem encontrada!</div>
+            <button id="copy-button" class="button">Copiar</button>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

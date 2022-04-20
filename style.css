@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E5E5E5;
+    padding: 2%;
+}
+
+#main{
+    padding: 5% 10% 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#text-input{
+    background: none;
+    border: none;
+    color: #0A3871;
+    font-size: 32px;
+    outline: none;
+    width: 50vw;
+    height: 60vh;
+}
+
+#left-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+#buttons{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#warn-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+#warn-symbol{
+    margin-right: 1vw;
+    width: 1.5vw;
+    height: 3vh;
+    background-color: #495057;
+    color: #E5E5E5;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#warn-text{
+    color: #495057;
+}
+
+.button{
+    width: 20vw;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#encrypt{
+    background-color: #0A3871;
+    color: #E5E5E5;
+    border: none;
+}
+
+#encrypt:hover{
+    background-color: #072549;
+}
+
+#decrypt{
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+
+#right-wrapper{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    padding: 2%;
+    width: 25vw;
+    height: 93.9vh;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#text-result{
+    font-size: 1.2rem;
+    color: #495057;
+}
+
+#copy-button{
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+
+@media screen and (max-width: 700px){
+    #main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #text-input, #right-wrapper, #buttons{
+        width: 100%;
+    }
+
+    #right-wrapper{
+        position: inherit;
+        margin-top: 3vh;
+        height: auto;
+    }
+
+    .button{
+        width: 100%;
+    }
+
+    #decrypt{
+        margin-left: 2vw;
+    }
+
+    #copy-button{
+        margin-top: 5vh;
+    }
+    
+    #warn-symbol{
+        width: 5vw;
+        height: 2.5vh;
+        margin-bottom: 2.5vh;
+    }
+}
